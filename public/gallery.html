@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="../rcb-logo.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="RCB Champions 2025 - Photo Gallery. Ee Sala Cup Namdu!" />
+    <title>Gallery | RCB Champions 2025</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: #000;
+            color: #fff;
+        }
+
+        nav {
+            background-color: #CC0000;
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        nav .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: white;
+            text-decoration: none;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 2rem;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: opacity 0.3s;
+        }
+
+        nav a:hover {
+            opacity: 0.8;
+        }
+
+        nav a.active {
+            border-bottom: 3px solid white;
+            padding-bottom: 0.5rem;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem 1rem;
+        }
+
+        .page-header {
+            text-align: center;
+            margin-bottom: 3rem;
+            background: linear-gradient(135deg, #CC0000 0%, #990000 100%);
+            color: white;
+            padding: 3rem;
+            border-radius: 8px;
+        }
+
+        .page-header h1 {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 3rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(204, 0, 0, 0.3);
+            transition: transform 0.3s;
+        }
+
+        .gallery-item:hover {
+            transform: scale(1.05);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .gallery-caption {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(0, 0, 0, 0.8);
+            color: white;
+            padding: 1rem;
+            font-size: 0.9rem;
+        }
+
+        footer {
+            background: #CC0000;
+            color: white;
+            text-align: center;
+            padding: 2rem 1rem;
+            margin-top: 3rem;
+        }
+
+        @media (max-width: 768px) {
+            nav ul {
+                gap: 1rem;
+            }
+
+            .page-header h1 {
+                font-size: 2rem;
+            }
+
+            .gallery-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="container">
+            <a href="../index.html" class="logo">🏏 RCB Champions</a>
+            <ul id="nav-menu">
+                <li><a href="../index.html" class="nav-link">Home</a></li>
+                <li><a href="../about.html" class="nav-link">About</a></li>
+                <li><a href="gallery.html" class="nav-link active">Gallery</a></li>
+                <li><a href="../highlights.html" class="nav-link">Highlights</a></li>
+                <li><a href="../contact.html" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container">
+        <div class="page-header">
+            <h1>📸 Champions Gallery</h1>
+            <p>Celebrating Our Historic Victory</p>
+        </div>
+
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <img src="../champions-celebrate.png" alt="Champions Celebrating">
+                <div class="gallery-caption">🎉 Victory Celebration</div>
+            </div>
+            <div class="gallery-item">
+                <img src="../chinnaswamy-fortress.png" alt="Chinnaswamy Stadium">
+                <div class="gallery-caption">🏟️ Fortress Chinnaswamy</div>
+            </div>
+            <div class="gallery-item">
+                <img src="../fireworks.png" alt="Victory Fireworks">
+                <div class="gallery-caption">✨ Victory Fireworks</div>
+            </div>
+            <div class="gallery-item">
+                <img src="../golden-trophy.png" alt="Golden Trophy">
+                <div class="gallery-caption">🏆 The Golden Trophy</div>
+            </div>
+            <div class="gallery-item">
+                <img src="../sea-of-red.png" alt="Sea of Red Fans">
+                <div class="gallery-caption">❤️ Sea of Red</div>
+            </div>
+            <div class="gallery-item">
+                <img src="../trophy-lift.png" alt="Trophy Lift">
+                <div class="gallery-caption">🎊 Trophy Lift Moment</div>
+            </div>
+            <div class="gallery-item">
+                <img src="../victory-parade.png" alt="Victory Parade">
+                <div class="gallery-caption">🎭 Victory Parade</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Royal Challengers Bengaluru. Ee Sala Cup Namdu! 🏆</p>
+    </footer>
+</body>
+</html>
